@@ -1,8 +1,8 @@
 <?php
 //credentials
 $server = "plesk.remote.ac";
-$username = "WS381219_JasmineSmith";
-$password = 'entry_for_webapp';
+$username = "WS381219_JasmineSmith8";
+$password = '&jGc544p9';
 $database = "WS381219_WAD";
 //connect to the database
 $connect = mysqli_connect($server,$username,$password,$database);
