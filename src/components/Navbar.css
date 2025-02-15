@@ -1,0 +1,72 @@
+.navbar {
+    background-color: #710000; /* Dark Red */
+    border-radius: 15px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar .nav-item {
+    list-style: none;
+  }
+  
+  .navbar .navbar-brand {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    text-decoration: none;
+  }
+  
+  .navbar .navbar-brand h1 {
+    font-weight: 700;
+    color: white;
+    margin: 0;
+  }
+  
+  .navbar .navbar-toggler {
+    border: none;
+  }
+  
+  .navbar .navbar-nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar .navbar-nav .nav-link {
+    color: white;
+    margin: 0 10px;
+    text-emphasis: none;
+    text-decoration: none;
+  }
+  
+  .navbar .navbar-nav .nav-link:hover {
+    color: #F0CACA; 
+    text-decoration: none;
+  }
+  
+  .navbar .form-control {
+    border: none;
+    border-radius: 15px;
+    padding: 10px 15px;
+    margin-left: 25px;
+  }
+  
+  .navbar .search-container {
+    display: flex;
+    align-items: center;
+    margin-left: 250px; 
+  }
+  
+  .navbar .btn-outline-danger {
+    color: white;
+    border-color: white;
+    border-radius: 15px;
+    padding: 5px 10px;
+    margin-left: 15px;
+  }
+  
+  .navbar .btn-outline-danger:hover {
+    background-color: #F0CACA; 
+    border-color: #F0CACA;
+  }
