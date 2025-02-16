@@ -1,4 +1,9 @@
 <?php
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Methods: POST");
+header("Access-Control-Allow-Headers: Content-Type");
+header("Content-Type: application/json");
+
 require_once("_connect.php");
 
 if (!isset($_POST['email']) || !isset($_POST['password'])) die("Missing POST data");
