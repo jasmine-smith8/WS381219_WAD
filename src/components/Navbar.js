@@ -1,35 +1,36 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import handleLogout from'../pages/Logout.js';
+
 
 function Navbar() {
 
   return (
-    <nav className="navbar navbar-expand-lg">
-      <div className="container-fluid">
-        <div className="d-flex align-items-center ms-auto">
+    <nav className="navbar">
+      <div className="container">
             <Link className="navbar-brand" to="/">
             <h1>HateHire</h1>
             </Link>
-          <div className="search-container d-flex">
-            <form className="d-flex" role="search">
+          <div className="search-container">
+            <form className="search" role="search">
               <input
-                className="form-control me-2"
+                className="search-input"
                 type="search"
                 placeholder="Search For A Course..."
                 aria-label="Search"
               />
-              <button className="btn btn-outline-danger" type="submit">
+              <button className="search-button" type="submit">
                 <img
                   src="https://img.icons8.com/ios-glyphs/30/000000/search--v1.png"
                   alt="Search"
-                  height="15px"
-                  width="15px"
+                  height="20px"
+                  width="20px"
                 />
               </button>
             </form>
           </div>
-          <ul className="navbar-nav ms-3">
+          <ul className="navbar-links">
             <li className="nav-item">
               <Link className="nav-link" to="/browse-courses">
                 Browse Courses
@@ -41,13 +42,12 @@ function Navbar() {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/logout">
+                <button className="nav-link btn btn-link" onClick={handleLogout}>
                     Logout
-                  </Link>
-                </li>
+                </button>
+            </li>
           </ul>
         </div>
-      </div>
     </nav>
   );
 }

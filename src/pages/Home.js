@@ -3,13 +3,13 @@ import React from 'react';
 function Home() {
   return (
     <main id="content">
-      <div className="container-fluid">
+      <div className="container">
         <div className="title">
           <h3>
             Welcome to <strong>HateHire</strong>, where the work is as unique as you are!
           </h3>
         </div>
-        <div className="employee-testimony">
+        <div className="customer-testimony">
           <h4>Customer Testimonies</h4>
         </div>
         <div className="grid-container">
