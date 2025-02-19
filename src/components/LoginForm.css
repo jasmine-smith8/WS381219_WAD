@@ -1,0 +1,29 @@
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #F0CACA;
+    gap: 25px;
+}
+
+.login-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-form button {
+    background-color: #710000;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #D99293;
+}

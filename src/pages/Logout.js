@@ -1,4 +1,4 @@
-const handleLogout = () => {
+export const handleLogout = () => {
     localStorage.removeItem("user");
     window.location.reload(); 
 };
