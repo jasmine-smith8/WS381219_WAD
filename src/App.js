@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import Home from './pages/Home';
-import BrowseCourses from './pages/Browse-Courses';
-import LoginForm from './components/LoginForm';
+import Navbar from './components/Navbar.js';
+import Footer from './components/Footer.js';
+import Home from './pages/Home.js';
+import BrowseCourses from './pages/Browse-Courses.js';
+import LoginForm from './components/LoginForm.js';
 import './App.css';
 
 function App() {
