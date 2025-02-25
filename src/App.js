@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './components/Navbar.js';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Footer from './components/Footer.js';
 import Home from './pages/Home.js';
 import BrowseCourses from './pages/Browse-Courses.js';
 import LoginForm from './components/LoginForm.js';
+import Navbar from './components/Navbar.js';
 import './App.css';
 
 function App() {
@@ -28,10 +28,9 @@ function App() {
           </header>
         )}
         <Routes>
-          <Route path="/" element={<Home />}/>
-          <Route path="/browse-courses" element={<BrowseCourses />}/>
+          <Route path="/" element={isAuthenticated ? <Home /> : <Navigate to="/login" />} />
+          <Route path="/browse-courses" element={isAuthenticated ? <BrowseCourses /> : <Navigate to="/login" />} />
           <Route path="/login" element={<LoginForm setIsAuthenticated={setIsAuthenticated} />} />
-          <Route path="/auth" element={<LoginForm setIsAuthenticated={setIsAuthenticated} />} />
         </Routes>
         {isAuthenticated && <Footer />}
       </div>
