@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . "../../vendor/autoload.php";
+require_once __DIR__ . "vendor/autoload.php"; 
 
 use Dotenv\Dotenv;
 
@@ -12,11 +12,6 @@ $server = $_ENV['DB_SERVER'];
 $username = $_ENV['DB_USERNAME'];
 $password = $_ENV['DB_PASSWORD'];
 $database = $_ENV['DB_DATABASE'];
-
-echo "Server: $server\n";
-echo "Username: $username\n";
-echo "Password: $password\n";
-echo "Database: $database\n";
 
 //connect to the database
 $connect = mysqli_connect($server, $username, $password, $database);
