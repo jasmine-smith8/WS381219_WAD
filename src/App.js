@@ -5,6 +5,7 @@ import Home from './pages/Home.js';
 import BrowseCourses from './pages/Browse-Courses.js';
 import LoginForm from './components/LoginForm.js';
 import Navbar from './components/Navbar.js';
+import UserDashboard from './pages/User-Dashboard.js';
 import './App.css';
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <Routes>
           <Route path="/" element={isAuthenticated ? <Home /> : <Navigate to="/login" />} />
           <Route path="/browse-courses" element={isAuthenticated ? <BrowseCourses /> : <Navigate to="/login" />} />
+          <Route path="/user-dashboard" element={isAuthenticated ? <UserDashboard /> : <Navigate to="/user-dashboard" />} />
           <Route path="/login" element={<LoginForm setIsAuthenticated={setIsAuthenticated} />} />
         </Routes>
         {isAuthenticated && <Footer />}

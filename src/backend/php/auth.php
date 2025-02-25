@@ -5,6 +5,15 @@ error_reporting(E_ALL);
 
 require_once("_connect.php");
 
+session_set_cookie_params([
+    'lifetime' => 0,
+    'path' => '/',
+    'domain' => '', // Set your domain if needed
+    'secure' => true,
+    'httponly' => true,
+    'samesite' => 'None'
+]);
+
 // Get the JSON input
 $input = json_decode(file_get_contents('php://input'), true);
 
